@@ -22,7 +22,6 @@ class ProblemPage extends HookWidget {
         child: Scaffold(
       body: danceState.when(
         data: (list) => ListView.builder(
-            shrinkWrap: true,
             itemCount: list.length,
             itemBuilder: (BuildContext context, int index) {
               final String str = list[index];
